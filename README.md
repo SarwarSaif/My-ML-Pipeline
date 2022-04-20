@@ -30,7 +30,11 @@ has a user interface.
 |---|---|
 | git flow | 0.4.1 |
 | python | 3.8.9 | 
-| Django | 3.2 (Django 3.2 supports python 3.6, 3.7, 3.8, 3.9, 3.10 )| 
+| Django | 3.2 (Django 3.2 supports python 3.6, 3.7, 3.8, 3.9, 3.10 )|
+| Numpy | 1.22.3 |
+| pandas | 1.4.2 |
+| sklearn | 0.0 |
+| joblib | 1.1.0 |
 
 
 ### Clone Repo
@@ -89,4 +93,12 @@ mkdir notebooks
 cd notebooks
 # start Jupyter
 jupyter notebook
+```
+
+When starting a new notebook make sure that you select the correct kernel, venv in our case
+
+### Train ML Algorithms
+Before building ML algorithms we need to install packages:
+```
+pip3 install numpy pandas sklearn joblib
 ```
