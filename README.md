@@ -7,9 +7,18 @@ This Repo will consists of a simple End-to-End modern pipeline
 3. Dockerize the whole model 
 4. From Build to Dockerize use Jenkins to fetch
 
-## Dependencies
+## PC Setup
 | Name | Version|
 |---|---|
+| OS | macOS Big Sur 11.3.1 |
+| Processor | 2.4 GHz 8-Core Intel Core i9 |
+| memory | 32 GB 2667 MHz DDR4 |
+| Grahics | AMD Radeon Pro 5300M 4 GB |
+
+## Setup Environment
+| Name | Version|
+|---|---|
+| git flow | 0.4.1 |
 | python | 3.8 | 
 | Django | 2.2.4 | 
 
