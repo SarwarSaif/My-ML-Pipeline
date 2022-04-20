@@ -109,4 +109,5 @@ Data set [https://github.com/pplonski/datasets-for-start].
 The ML will be used to predict whether income exceeds $50K/year based on census data.
 
 Credit:
-(https://www.deploymachinelearning.com/)[Deploy Machine Learning Models with Django]
+( https://www.deploymachinelearning.com/ )[ Deploy Machine Learning Models with Django]
+(https://github.com/pplonski/my_ml_service) [ Repo Link ]
