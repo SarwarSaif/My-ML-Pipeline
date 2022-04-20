@@ -15,7 +15,7 @@ has a user interface.
 1. **Deploy Machine Learning Models with Django**
 2. Create a Dashboard with Plotly [https://plotly.com/dash/](https://plotly.com/dash/)
 3. Dockerize the whole model 
-4. From Build to Dockerize use Jenkins to fetch
+4. From Build to Dockerize use Jenkins CI/CD Pipeline
 
 ## PC Setup
 | Name | Version|
@@ -107,3 +107,6 @@ pip3 install numpy pandas sklearn joblib
 Create a notebook named train_income_classifier.
 Data set [https://github.com/pplonski/datasets-for-start].
 The ML will be used to predict whether income exceeds $50K/year based on census data.
+
+Credit:
+(https://www.deploymachinelearning.com/)[Deploy Machine Learning Models with Django]
