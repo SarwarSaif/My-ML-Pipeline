@@ -22,6 +22,17 @@ This Repo will consists of a simple End-to-End modern pipeline
 | python | 3.8 | 
 | Django | 2.2.4 | 
 
+### Clone Repo
+```
+git clone https://github.com/SarwarSaif/My-ML-Pipeline.git
+```
+
+### Create a Virtual Env under the Project Folder
+```
+cd projectfolder # go to project folder
+python3 -m venv ./venv
+```
+
 ## This ML System Strength
 - can handle many API endpoints,
 - each API endpoint can have several ML algorithms with different versions,
