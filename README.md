@@ -67,3 +67,26 @@ Run 'python3 manage.py migrate' to apply them.**
 python3 manage.py migrate
 python3 manage.py runserver
 ```
+
+## Build ML algorithms
+
+### Setup Jupyter Notebook
+Go back to the project directory
+```
+# run commands in your project directory
+pip3 install jupyter notebook
+```
+To set Jupyter to use local virtualenv environment run:
+```
+ipython kernel install --user --name=venv
+```
+**Installed kernelspec venv in /Users/user_name/Library/Jupyter/kernels/venv**
+
+Create a notebooks directory to put Jupiter files. To start Jupyter notebook run:
+```
+# create a research directory
+mkdir notebooks
+cd notebooks
+# start Jupyter
+jupyter notebook
+```
