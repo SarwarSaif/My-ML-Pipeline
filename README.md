@@ -1,6 +1,16 @@
 # My-ML-Pipeline
 This Repo will consists of a simple End-to-End modern pipeline
 
+## Overview
+This ML System
+- can handle many API endpoints,
+- each API endpoint can have several ML algorithms with different versions,
+- ML code and artifacts (files with ML parameters) are stored in the code repository (git),
+- supports fast deployments and continuous integration (tests for both: server and ML code),
+- supports monitoring and algorithm diagnostic (support A/B tests),
+- is scalable (deployed with containers),
+has a user interface.
+
 ## To-Do:
 1. **Deploy Machine Learning Models with Django**
 2. Create a Dashboard with Plotly [https://plotly.com/dash/](https://plotly.com/dash/)
@@ -39,14 +49,21 @@ source venv/bin/activate # activate the environment
 pip3 install django==3.2
 ```
 
-## This ML System Strength
-- can handle many API endpoints,
-- each API endpoint can have several ML algorithms with different versions,
-- ML code and artifacts (files with ML parameters) are stored in the code repository (git),
-- supports fast deployments and continuous integration (tests for both: server and ML code),
-- supports monitoring and algorithm diagnostic (support A/B tests),
-- is scalable (deployed with containers),
-has a user interface.
+## Start Django Project
+```
+mkdir django-backend
+cd django-backend
+django-admin startproject server
+```
+You can run your initiated server with the following command:
+```
+cd server
+python3 manage.py runserver
+```
+**Issue that you might face: You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python3 manage.py migrate' to apply them.**
 
-
-
+```
+python3 manage.py migrate
+python3 manage.py runserver
+```
