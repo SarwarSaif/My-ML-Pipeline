@@ -20,7 +20,8 @@ This Repo will consists of a simple End-to-End modern pipeline
 |---|---|
 | git flow | 0.4.1 |
 | python | 3.8.9 | 
-| Django | 3.2 | 
+| Django | 3.2 (Django 3.2 supports python 3.6, 3.7, 3.8, 3.9, 3.10 )| 
+
 
 ### Clone Repo
 ```
