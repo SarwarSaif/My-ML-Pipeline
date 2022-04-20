@@ -7,3 +7,8 @@ This Repo will consists of a simple End-to-End modern pipeline
 3. Dockerize the whole model 
 4. From Build to Dockerize use Jenkins to fetch
 
+## Dependencies
+| Name | Version|
+|---|---|
+| python | 3.8 | 
+| Django | 2.2.4 | 
