@@ -102,3 +102,8 @@ Before building ML algorithms we need to install packages:
 ```
 pip3 install numpy pandas sklearn joblib
 ```
+
+#### Loading data
+Create a notebook named train_income_classifier.
+Data set [https://github.com/pplonski/datasets-for-start].
+The ML will be used to predict whether income exceeds $50K/year based on census data.
