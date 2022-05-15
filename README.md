@@ -102,12 +102,22 @@ Before building ML algorithms we need to install packages:
 ```
 pip3 install numpy pandas sklearn joblib
 ```
-
-#### Loading data
 Create a notebook named train_income_classifier.
 Data set [https://github.com/pplonski/datasets-for-start].
 The ML will be used to predict whether income exceeds $50K/year based on census data.
 
-Credit:
+Then do the following steps:
+1. Load Data and Split into Test and Training set
+2. Data Preprocessing
+   1. fill missing values with average
+   2. convert categorical variables
+3. Train Algorithms
+4. Add ML code and aritifacts to the repository
+
+## Django Models
+### Create Django Models
+
+
+#### Credit:
 ( https://www.deploymachinelearning.com/ )[ Deploy Machine Learning Models with Django]
 (https://github.com/pplonski/my_ml_service) [ Repo Link ]
