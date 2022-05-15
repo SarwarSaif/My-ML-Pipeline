@@ -116,7 +116,33 @@ Then do the following steps:
 
 ## Django Models
 ### Create Django Models
+1. Create a new app.
+```
+# run this in django-backend/server directory
+python manage.py startapp endpoints
+mkdir apps
+mv endpoints/ apps/
+```
+2. Let’s go to apps/endpoints/models.py file and define database models (Django provides object-relational mapping layer (ORM)).
 
+    We defined three models:
+    - Endpoint - to keep information about our endpoints,
+    - MLAlgorithm - to keep information about ML algorithms used in the service,
+    - MLAlgorithmStatus - to keep information about ML algorithm statuses. The status can change in time, for example, we can set testing as initial status and then after testing period switch to production state.
+    - MLRequest - to keep information about all requests to ML algorithms. It will be needed to monitor ML algorithms and run A/B tests.
+3. Add our app to INSTALLED_APPS in backend/server/server/settings.py, it should look like:
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    # apps
+    'apps.endpoints'
+]
+```
 
 #### Credit:
 ( https://www.deploymachinelearning.com/ )[ Deploy Machine Learning Models with Django]
