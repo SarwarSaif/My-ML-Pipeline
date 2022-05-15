@@ -143,6 +143,22 @@ INSTALLED_APPS = [
     'apps.endpoints'
 ]
 ```
+4. To apply our models to the database we need to run migrations:
+Before migration as we moved our endpoint to apps folder, we need to adjust
+AppConfig for endpoint.
+```
+# configure it in django-backend/server/apps/endpoints directory
+class EndpointsConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'apps.endpoints'
+```
+Then run the migration
+```
+# please run it in django-backend/server directory
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
 
 #### Credit:
 ( https://www.deploymachinelearning.com/ )[ Deploy Machine Learning Models with Django]
